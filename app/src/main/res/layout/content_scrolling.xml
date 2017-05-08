@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.microtree.www.mzk.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <com.jawnnypoo.physicslayout.PhysicsFrameLayout
+        android:id="@+id/physics_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:boundsSize="100dp">
+
+        <ImageView
+            android:layout_width="@dimen/square_size"
+            android:layout_height="@dimen/square_size"
+            android:src="@drawable/pikachu"
+            android:layout_gravity="left"
+             />
+
+        <ImageView
+            android:layout_width="@dimen/square_size"
+            android:layout_height="@dimen/square_size"
+            android:src="@drawable/pikachu"
+            android:layout_gravity="right"
+             />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/circle_size"
+            android:layout_height="@dimen/circle_size"
+            android:layout_gravity="center"
+            app:layout_shape="circle"
+            android:src="@drawable/pika"
+            app:layout_bodyType="dynamic"
+             />
+
+        <ImageView
+            android:layout_width="@dimen/square_size"
+            android:layout_height="@dimen/square_size"
+            android:src="@drawable/pikachu"
+            android:layout_gravity="bottom|left"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/square_size"
+            android:layout_height="@dimen/square_size"
+            android:src="@drawable/pikachu"
+            android:layout_gravity="bottom|right"
+             />
+
+
+    </com.jawnnypoo.physicslayout.PhysicsFrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:gravity="center_horizontal"
+        android:text="Just For Fun"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center_horizontal"
+        android:text="Fling Images or Press Black Button"/>
+
+
+
+</LinearLayout>
